@@ -12,4 +12,13 @@ function evenNumbers(numbers) {
 console.log(evenNumbers(numbers)); 
 
 
-//
+// 6 Change the background color 
+
+const changeBg = document.querySelector("body")
+const btn = document.querySelector("#changebgcolor-btn")
+
+
+btn.addEventListener('click', function() {
+    changeBg.classList.add('bg-color'); 
+});
+
