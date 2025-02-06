@@ -1,5 +1,6 @@
 .bg-color {
     background-color: rgb(23, 23, 23);
+    color: #fff;
 }
 
 button#changebgcolor-btn {
@@ -38,4 +39,15 @@ button#changebgcolor-btn {
     border-radius: 5px;
     width: 470px;
 
+}
+
+.users-container .card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #e18ce6;
+    margin: 12px 0;
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px;
 }

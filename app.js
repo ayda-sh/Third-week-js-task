@@ -66,3 +66,46 @@ function createCard(title, content) {
     })
     
 }
+
+// 12 
+
+async function getUserData() {
+    const userContainer = document.querySelector(".users-container")
+    try {
+        const url = "https://jsonplaceholder.typicode.com/users"
+        const response = await fetch(url, {
+            method: "GET",
+
+        });
+
+        const data = await response.json();
+
+        data.forEach((users) => {
+
+            const cardBoxEl = document.createElement("div")
+            const userNameEl = document.createElement("div")
+            const userEmailEl = document.createElement("div")
+            const userH = document.createElement("h5")
+            const userP = document.createElement("p")
+
+
+            cardBoxEl.classList.add("card")
+            userNameEl.classList.add("user-name")
+            userEmailEl.classList.add("user-email")
+            userH.textContent = users.name
+            userP.textContent = users.email
+
+            console.log(userH, userP)
+            userContainer.appendChild(cardBoxEl)
+            cardBoxEl.append(userNameEl, userEmailEl)
+            userNameEl.appendChild(userH)
+            userEmailEl.appendChild(userP)
+        })
+
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
+
+getUserData()
