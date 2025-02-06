@@ -1,3 +1,41 @@
 .bg-color {
-    background-color: rgb(255, 163, 163);
+    background-color: rgb(23, 23, 23);
+}
+
+button#changebgcolor-btn {
+    background: #b3bbff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+} 
+.task8 form {
+    padding: 14px;
+    background: #d7ffd4;
+    border-radius: 8px;
+    width: 470px;
+    display: grid;
+    gap: 12px;
+}
+
+.task8 input, .task8 textarea {
+    border: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.task8 button {
+    background: #ceff4e;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.task8 .box {
+    background: #d7ffd4;
+    padding: 11px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 470px;
+
 }
